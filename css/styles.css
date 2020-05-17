@@ -19,6 +19,10 @@ font-family: Roboto, sans-serif;*/
   --title-background-color: rgba(47, 48, 58, 0.8);
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -30,6 +34,25 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  outline: 2px solid tomato;
+  padding: 0 15px;
+  margin-bottom: 94px;
 }
 
 .logo {
@@ -104,11 +127,31 @@ ul {
   background-color: var(--accent-color);
 }
 
-.hero {
+.navig {
+  margin-bottom: 0;
+}
+
+.contain-heroy {
   background-color: #2f303a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 94px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
+.hero {
+  padding: 200px 477px;
 }
 
 .hero .hero-title {
+  display: inline-block;
+  width: 646px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
   color: var(--white-color);
 
   text-transform: uppercase;
@@ -116,23 +159,34 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
 .button-order,
 .button-order:hover,
 .button-order:focus {
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 46px;
+  margin-left: auto;
+  margin-right: auto;
+
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-family: 'Roboto', 'sans-serif';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
-  vertical-align: center;
   letter-spacing: 0.06em;
+}
+
+img {
+  display: block;
 }
 
 .title {
@@ -344,20 +398,33 @@ footer .logo-accent-one {
 }
 
 .button {
+  display: inline-block;
+  min-width: 73px;
+  vertical-align: middle;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 6px 22px;
+
   font-family: 'Roboto', 'sans-serif';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  text-align: center;
+  background-color: var(--primary-background-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
+  border-color: transparent;
 }
 
 .button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  border-color: transparent;
 }
 
 .item-type .item-text:hover {

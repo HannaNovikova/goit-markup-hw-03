@@ -50,9 +50,14 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 1230px;
-  outline: 2px solid tomato;
   padding: 0 15px;
   margin-bottom: 94px;
+}
+
+.navig {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .logo {
@@ -75,7 +80,19 @@ p {
   line-height: 1.19;
 }
 
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
   color: var(--title-text-color);
 
   text-decoration: none;
@@ -87,6 +104,9 @@ p {
 }
 
 .site-nav .link-current {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
   color: var(--accent-color);
 
   text-decoration: none;
@@ -97,7 +117,31 @@ p {
   letter-spacing: 0.02em;
 }
 
+.image-nav {
+  display: inline-flex;
+  margin-right: 10px;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.span-nav {
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.site-contact-main {
+  margin-left: auto;
+}
+
+.site-contact {
+  display: inline-flex;
+}
+
 .site-contact .link {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  justify-content: center;
   color: var(--primary-text-color);
 
   text-decoration: none;
@@ -106,6 +150,10 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-contact:not(:last-child) {
+  margin-right: 31px;
 }
 
 .site-nav .link:hover,
@@ -127,21 +175,17 @@ p {
   background-color: var(--accent-color);
 }
 
-.navig {
-  margin-bottom: 0;
-}
-
 .contain-heroy {
   display: flex;
+  align-items: center;
   background-color: #2f303a;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 94px;
   text-align: center;
-  outline: 2px solid tomato;
 }
 
 .hero {
-  padding: 200px 477px;
+  padding: 0 477px;
 }
 
 .hero .hero-title {

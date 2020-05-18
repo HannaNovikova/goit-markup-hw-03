@@ -487,9 +487,12 @@ footer .logo-accent-one {
   border-color: transparent;
 }
 
-.portfolio-list {
+.container .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-list .item {

@@ -276,6 +276,10 @@ p {
   margin-top: 50px;
 }
 
+.business .item.item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .business-title:hover {
   color: var(--accent-color);
   background-color: var(--title-background-color);
@@ -296,6 +300,10 @@ p {
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
+}
+
+.container .prof {
+  display: flex;
 }
 
 .team-title {
@@ -337,6 +345,15 @@ p {
   color: var(--white-color);
   background-color: var(--accent-color);
   text-decoration: none;
+}
+
+.container .clients {
+  display: flex;
+  justify-content: center;
+}
+
+.clients .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .pic-company:hover {

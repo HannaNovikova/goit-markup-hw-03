@@ -232,8 +232,8 @@ p {
   width: 278px;
 }
 
-img {
-  display: block;
+.benefits .item.item:not(:last-child) {
+  margin-right: 29px;
 }
 
 .title {
@@ -269,6 +269,11 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.container .business {
+  display: flex;
+  margin-top: 50px;
 }
 
 .business-title:hover {
@@ -309,7 +314,7 @@ img {
   line-height: 1.19;
 }
 
-.section {
+.container .section-team {
   background-color: var(--primary-background-color);
 }
 

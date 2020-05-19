@@ -55,6 +55,12 @@ p {
   margin-right: auto;
 }
 
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*Навигация*/
 
 .navig {
@@ -224,22 +230,7 @@ p {
   letter-spacing: 0.06em;
 }
 
-/*Преимущества*/
-
-.container .benefits {
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  border-bottom: 1px solid #ececec;
-}
-
-.benefits .item {
-  width: 270px;
-}
-
-.benefits .item.item:not(:last-child) {
-  margin-right: 30px;
-}
+/*Заголовки*/
 
 .title {
   color: var(--title-text-color);
@@ -249,6 +240,27 @@ p {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+/*Преимущества*/
+
+.container .section-benefits {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  border-bottom: 1px solid #ececec;
+}
+
+.benefits {
+  display: flex;
+}
+
+.benefits .item {
+  width: 270px;
+}
+
+.benefits .item.item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .benefits-image {
@@ -284,9 +296,20 @@ p {
   line-height: 1.71;
 }
 
+/*Чем мы занимаемся*/
+
+.container .section-business {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container .business {
   display: flex;
-  margin-top: 50px;
+}
+
+.business .item {
+  padding-top: 50px;
+  border-radius: 4px;
 }
 
 .business .item.item:not(:last-child) {
@@ -304,6 +327,9 @@ p {
 }
 
 .business-title {
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   color: var(--white-color);
   background-color: var(--title-background-color);
 

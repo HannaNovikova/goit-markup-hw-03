@@ -349,14 +349,19 @@ p {
 
 /*Команда*/
 
-.contain .section-team {
-  padding: 94px 215px;
+.contain {
   background-color: var(--primary-background-color);
+}
+
+.contain .section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .contain .prof {
   display: flex;
   margin-top: 50px;
+  justify-content: space-between;
 }
 
 .team-list {
@@ -423,32 +428,67 @@ p {
 
 /*Клиенты*/
 
+.container .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container .clients {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .clients .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.pic-company:hover {
+.clients .item {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients .item:hover {
   background-color: var(--accent-color);
 }
 
-.pic-company:focus {
+.clients .item:focus {
   background-color: var(--accent-color);
 }
 
 /*Футер*/
 
 footer {
-  color: var(--white-color);
   background-color: #2f303a;
+}
+
+footer .container {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: var(--white-color);
   text-decoration: none;
   font-family: 'Roboto', 'sans-serif';
 }
 
+/*.map-link {
+  display: block;
+  padding-top: 48px;
+  padding-bottom: 28px;
+  }*/
+
+.map-link .logo {
+  display: flex;
+  margin-right: 171px;
+}
+
+}
 .contact-adress-footer {
   color: inherit;
   font-family: 'Roboto', 'sans-serif';
@@ -495,7 +535,7 @@ footer {
 }
 
 .link-studio {
-  color: var(--white-color);
+  color: var (--white-color);
 
   text-decoration: none;
   font-family: 'Roboto', 'sans-serif';
@@ -504,7 +544,15 @@ footer {
   line-height: 1.71;
 }
 
-.text-footer {
+.join .link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  padding-top: 18px;
+  padding-bottom: 21px;
+
   color: rgba(255, 255, 255, 0.4);
   font-family: 'Roboto', 'sans-serif';
   font-weight: 400;
@@ -543,6 +591,8 @@ footer .logo-accent-one {
 .link-studio:focus {
   background-color: var(--accent-color);
 }
+
+/*Портфолио*/
 
 .container .portfolio {
   display: flex;

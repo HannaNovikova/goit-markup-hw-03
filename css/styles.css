@@ -405,8 +405,10 @@ p {
 
 .section-team .item {
   display: flex;
-  justify-content: center;
-  margin-bottom: 27px;
+  padding-bottom: 27px;
+  margin-right: 34px;
+  margin-left: 29px;
+  justify-content: space-between;
 }
 
 .link-social {

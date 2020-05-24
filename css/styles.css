@@ -324,7 +324,7 @@ p {
   width: 370px;
   margin-top: 50px;
   border-radius: 4px 4px 5px;
-  border: 1px solid red;
+  border: 1px solid transparent;
 }
 
 .business .item.item:not(:last-child) {
@@ -602,7 +602,7 @@ footer .logo-one {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.18;
-  text-shadow: 4px, 4px, 10px, #000000;
+  text-shadow: 4px 4px 10px #000000;
 }
 
 footer .logo-accent-one {
@@ -613,7 +613,7 @@ footer .logo-accent-one {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.18;
-  text-shadow: 4px, 4px, 10px, #000000;
+  text-shadow: 4px 4px 10px #000000;
 }
 
 .link-studio:hover {

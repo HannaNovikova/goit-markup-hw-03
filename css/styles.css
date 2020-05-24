@@ -323,8 +323,8 @@ p {
 .business .item {
   width: 370px;
   margin-top: 50px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-radius: 4px 4px 5px;
+  border: 1px solid red;
 }
 
 .business .item.item:not(:last-child) {
@@ -704,6 +704,17 @@ footer .sign {
   margin-bottom: 0;
 }
 
+.item-type .image {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.portfolio-list .subscr {
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  border-top-color: transparent;
+  border-radius: 0 0 5px 5px;
+}
+
 .item-type .item-text:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -715,6 +726,12 @@ footer .sign {
 }
 
 .item-type .item-title {
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+
   color: var(--title-text-color);
 
   font-family: 'Roboto', 'sans-serif';
@@ -725,6 +742,11 @@ footer .sign {
 }
 
 .item-type .category {
+  display: block;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+
   color: var(--primary-text-color);
 
   font-family: 'Roboto', 'sans-serif';

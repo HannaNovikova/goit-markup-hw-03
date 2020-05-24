@@ -62,6 +62,17 @@ p {
   overflow: hidden;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /*Навигация*/
 
 .navig {
@@ -472,6 +483,7 @@ footer {
 
 footer .container {
   display: flex;
+  align-items: baseline;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   color: var(--white-color);
@@ -479,18 +491,26 @@ footer .container {
   font-family: 'Roboto', 'sans-serif';
 }
 
-/*.map-link {
-  display: block;
+.map-link {
   padding-top: 48px;
   padding-bottom: 28px;
-  }*/
-
-.map-link .logo {
-  display: flex;
-  margin-right: 171px;
+  margin-right: 69px;
 }
 
+footer .logo {
+  display: inline-block;
+  margin-bottom: 10px;
 }
+
+footer .logo:hover,
+footer .logo:focus {
+  border-bottom: 1px solid #2196f3;
+}
+
+footer .adress {
+  display: block;
+}
+
 .contact-adress-footer {
   color: inherit;
   font-family: 'Roboto', 'sans-serif';
@@ -528,7 +548,18 @@ footer .container {
   background-color: var(--accent-color);
 }
 
+.join {
+  display: flex;
+  flex-direction: column;
+  min-width: 206px;
+  margin-right: 94px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
 .social {
+  margin-bottom: 21px;
+
   text-transform: uppercase;
   font-family: 'Roboto', 'sans-serif';
   font-weight: 700;
@@ -536,19 +567,19 @@ footer .container {
   line-height: 1.14;
 }
 
-.link-studio {
-  color: var (--white-color);
-
-  text-decoration: none;
-  font-family: 'Roboto', 'sans-serif';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 .join .link {
   display: flex;
   justify-content: space-between;
+}
+
+.item .link-studio {
+  color: var(--white-color);
+  text-decoration: none;
+  font-family: 'Roboto', 'sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .copyright {
@@ -586,15 +617,27 @@ footer .logo-accent-one {
 }
 
 .link-studio:hover {
+  color: var(--white-color);
   background-color: var(--accent-color);
   text-decoration: none;
 }
 
 .link-studio:focus {
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
+footer .sign {
+  display: flex;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
 /*Портфолио*/
+
+.portf {
+  border-bottom: 1px solid #ececec;
+}
 
 .container .portfolio {
   display: flex;

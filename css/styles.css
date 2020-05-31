@@ -114,6 +114,7 @@ p {
   padding-bottom: 32px;
   padding-top: 32px;
   color: var(--title-text-color);
+  -webkit-tap-highlight-color: transparent;
 
   text-decoration: none;
   font-family: 'Roboto', 'sans-serif';
@@ -128,6 +129,7 @@ p {
   padding-bottom: 32px;
   padding-top: 32px;
   color: var(--accent-color);
+  -webkit-tap-highlight-color: transparent;
 
   text-decoration: none;
   font-family: 'Roboto', 'sans-serif';
@@ -180,11 +182,13 @@ p {
 .site-nav .link-current:hover {
   color: var(--accent-color);
   text-decoration: underline;
+  outline: none;
 }
 
 .site-nav .link:focus {
   background-color: var(--accent-color);
   text-decoration: underline;
+  outline: none;
 }
 
 .site-contact .link:hover {
@@ -193,6 +197,7 @@ p {
 
 .site-contact .link:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 
 /*Герой*/
@@ -234,6 +239,7 @@ p {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
 
   font-family: 'Roboto', 'sans-serif';
   font-weight: 700;
@@ -339,6 +345,7 @@ p {
 .business-title:focus {
   color: var(--accent-color);
   background-color: var(--title-background-color);
+  outline: none;
 }
 
 .business-title {
@@ -437,6 +444,7 @@ p {
   color: var(--white-color);
   background-color: var(--accent-color);
   text-decoration: none;
+  outline: none;
 }
 
 /*Клиенты*/
@@ -473,6 +481,7 @@ p {
 
 .clients .item:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 
 /*Футер*/
@@ -505,6 +514,7 @@ footer .logo {
 footer .logo:hover,
 footer .logo:focus {
   border-bottom: 1px solid #2196f3;
+  outline: none;
 }
 
 footer .adress {
@@ -546,6 +556,7 @@ footer .adress {
 .contact-mail-footer:focus,
 .contact-tel-footer:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 
 .join {
@@ -625,6 +636,7 @@ footer .logo-accent-one {
 .link-studio:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  outline: none;
 }
 
 footer .sign {
@@ -680,6 +692,7 @@ footer .sign {
   color: var(--white-color);
   background-color: var(--accent-color);
   border-color: transparent;
+  outline: none;
 }
 
 .container .portfolio-list {
@@ -709,6 +722,11 @@ footer .sign {
 }
 
 .portfolio-list .subscr {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+
   box-sizing: border-box;
   border: 1px solid #e5e5e5;
   border-top-color: transparent;
@@ -723,14 +741,12 @@ footer .sign {
 .item-type .item-text:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  outline: none;
 }
 
 .item-type .item-title {
   display: block;
-  padding-top: 20px;
   margin-bottom: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
 
   color: var(--title-text-color);
 
@@ -743,9 +759,6 @@ footer .sign {
 
 .item-type .category {
   display: block;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
 
   color: var(--primary-text-color);
 
